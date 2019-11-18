@@ -1,0 +1,64 @@
+# Memory mapping
+TILESTART = 0x8000
+TILEEND = 0x97ff
+BG1START = 0x9800
+BG1END = 0x9bff
+BG2START = 0x9c00
+BG2END = 0x9fff
+
+# Interrupts
+VBLANK = 0x40
+LCDSTATUS = 0x48
+TIMER = 0x50
+SERIAL = 0x58
+JOYPAD = 0x60
+
+# IO Registers
+JOY = 0xff00 # Joypad
+SB = 0xff01 # Serial transfer
+SC = 0xff02 # SIO control
+DIV = 0xff04 # Divider Register
+TIMA = 0xff05 # Timer counter
+TMA = 0xff06 # Timer Modulo
+TAC = 0xff07 # Timer control
+IF = 0xff0f # Interrupt Flag
+NR10 = 0xff10 # Sound mode 1
+NR11 = 0xff11 # Sound mode 1
+NR12 = 0xff12 # Sound mode 1
+NR13 = 0xff13 # Sound mode 1
+NR14 = 0xff14 # Sound mode 1
+NR20 = 0xff15 # Sound mode 2
+NR21 = 0xff16 # Sound mode 2
+NR22 = 0xff17 # Sound mode 2
+NR23 = 0xff18 # Sound mode 2
+NR24 = 0xff19 # Sound mode 2
+NR30 = 0xff1a # Sound mode 3
+NR31 = 0xff1b # Sound mode 3
+NR32 = 0xff1c # Sound mode 3
+NR33 = 0xff1d # Sound mode 3
+NR34 = 0xff1e # Sound mode 3
+NR40 = 0xff1f # Sound mode 4
+NR41 = 0xff20 # Sound mode 4
+NR42 = 0xff21 # Sound mode 4
+NR43 = 0xff22 # Sound mode 4
+NR44 = 0xff23 # Sound mode 4
+NR50 = 0xff24 # Sound mode 5
+NR51 = 0xff25 # Sound mode 5
+NR52 = 0xff26 # Sound mode 5
+NR53 = 0xff27 # Sound mode 5
+NR54 = 0xff28 # Sound mode 5
+WPR = 0xff30 # Wave Pattern RAM
+LCDC = 0xff40 # LCD Control
+STAT = 0xff41 # LCDC Status
+SCY = 0xff42 # Scroll Y
+SCX = 0xff43 # Scroll X
+LY = 0xff44 # LCDC Y
+LYC = 0xff45 # LY Compare
+DMA = 0xff46 # DMA Address
+BGP = 0xff47 # BG/Window pallete data
+OBP0 = 0xff48 # Object Pallette 0 data
+OBP1 = 0xff49 # Object Pallette 1 data
+WY = 0xff4a # Window Y pos
+WX = 0xff4b # Window X pos
+UNMAP_BIOS = 0xff50  # Writing to this unmaps the bios
+IE = 0xffff # Interrupt Enable
